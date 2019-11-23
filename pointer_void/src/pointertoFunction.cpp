@@ -15,16 +15,14 @@ void *p;
 uint16_t *pointer_to_int;
 
 int main() {
+	//ex1
 	int b=10;
 	void *a=&b;
 	int *ptr=(int*)a;
 	cout<<*ptr;
+	printf("%d", *(int *)ptr);
 
-	int aa = 10;
-	void *ptra = &aa;
-	printf("%d", *(int *)ptra);
-
-
+//ex2
 	X=60000;
 	Y=660000;
 	Z=1250000;
