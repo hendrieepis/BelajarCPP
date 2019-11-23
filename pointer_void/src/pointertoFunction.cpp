@@ -15,12 +15,22 @@ void *p;
 uint16_t *pointer_to_int;
 
 int main() {
+	int b=10;
+	void *a=&b;
+	int *ptr=(int*)a;
+	cout<<*ptr;
+
+	int aa = 10;
+	void *ptra = &aa;
+	printf("%d", *(int *)ptra);
+
+
 	X=60000;
 	Y=660000;
 	Z=1250000;
 	cout<<"data X:"<<X<<endl;
 	p=&X;
-    pointer_to_int = (uint16_t *) p;
+	pointer_to_int = (uint16_t *) p;
 	cout<<"data X pointer:"<<*pointer_to_int <<endl;
 
 
@@ -29,6 +39,7 @@ int main() {
 
 	cout<<"data Y:"<<Y<<endl;
 	p=&Y;
+	cout<<"data p:"<<*(int *)p<<endl<<endl;
 	cout<<"alamat X:"<<&Y<<endl;
 	cout<<"alamat p:"<<p<<endl<<endl;
 
